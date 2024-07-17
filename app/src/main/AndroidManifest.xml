@@ -63,10 +63,6 @@
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/AppTheme.Light" />
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyB6-_bxYK5MsTuKF3mPvAvmq63SZEnG9Xk" />
     </application>
 
 </manifest>
