@@ -1,0 +1,23 @@
+<resources>
+    <style name="RatingBar" parent="Widget.AppCompat.RatingBar">
+        <item name="colorControlNormal">#706F6F</item>
+        <item name="colorControlActivated">#ffc922</item>
+    </style>
+
+    <style name="CustomTextStyle" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">sans-serif-condensed-medium</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.Mediiadmitereapp">
+        <item name="colorControlNormal">@color/not_selected_color</item>
+        <item name="colorControlActivated">@color/selected_color</item>
+    </style>
+
+    <style name="AppTheme.Light" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlNormal">@color/not_selected_color</item>
+        <item name="colorControlActivated">@color/selected_color</item>
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:navigationBarColor">@android:color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

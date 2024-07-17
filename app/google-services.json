@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "139050903250",
+    "project_id": "medii-admitere-app",
+    "storage_bucket": "medii-admitere-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:139050903250:android:4639d02f67aa7f33552f0b",
+        "android_client_info": {
+          "package_name": "com.example.medii_admitere_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAN_3f5--z-cAwo0W0eG0KlpVbMlj92USo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

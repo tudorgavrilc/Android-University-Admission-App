@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDF4F3"
+    tools:context=".AboutActivity">
+
+    <ImageView
+        android:id="@+id/about_iv_logo"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo_uni_navigator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/about_tv_nume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:text="@string/nume_aplicatie"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/albastru_mai_inchis"
+        app:layout_constraintTop_toBottomOf="@id/about_iv_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/about_tv_versiune"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/versiune_aplicatie"
+        android:fontFamily="@font/sanss"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        app:layout_constraintTop_toBottomOf="@+id/about_tv_nume"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/about_tv_app_descriere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:text="@string/descriere_aplicatie"
+        android:fontFamily="@font/sanss"
+        android:textStyle="bold"
+
+        android:textColor="@color/blue"
+        app:layout_constraintTop_toBottomOf="@+id/about_tv_versiune"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"/>
+
+
+    <TextView
+        android:id="@+id/about_tv_creator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/about_tv_app_descriere"
+        android:fontFamily="@font/sanss"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="@string/creator_aplicatie"
+        android:textColor="@color/blue_link"
+        android:clickable="true"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

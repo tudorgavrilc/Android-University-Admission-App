@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddReviewActivity">
+
+    <TextView
+        android:id="@+id/addReview_tv_titlu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/adaug_review"
+        android:textSize="24sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/addReview_tv_materii_studiate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/materiile_studiate"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/addReview_tv_titlu"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <RatingBar
+        android:id="@+id/addReview_rb_materii"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        app:layout_constraintTop_toBottomOf="@+id/addReview_tv_materii_studiate"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/addReview_tv_cadre_didactice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cadre_didactice"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/addReview_rb_materii"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <RatingBar
+        android:id="@+id/addReview_rb_cadre_didactice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        app:layout_constraintTop_toBottomOf="@+id/addReview_tv_cadre_didactice"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/addReview_tv_dotari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dotari_facultate"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/addReview_rb_cadre_didactice"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <RatingBar
+        android:id="@+id/addReview_rb_dotari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        app:layout_constraintTop_toBottomOf="@+id/addReview_tv_dotari"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"/>
+
+
+    <EditText
+        android:id="@+id/addReview_et_review_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:hint="@string/lasa_un_review_scris_optional"
+        app:layout_constraintTop_toBottomOf="@+id/addReview_rb_dotari"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/addReview_btn_trimite_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trimite"
+        app:layout_constraintTop_toBottomOf="@id/addReview_et_review_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

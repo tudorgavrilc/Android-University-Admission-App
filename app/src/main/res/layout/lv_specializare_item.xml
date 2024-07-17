@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#C4F1FA"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/lvSpec_tv_nume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nume_facultate"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/albastru_mai_inchis"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="6dp"/>
+
+    <TextView
+        android:id="@+id/lvSpec_tv_ultima_buget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ultima_medie_buget"
+        android:textSize="16sp"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/sanss"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/lvSpec_tv_nume"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="6dp"/>
+
+    <TextView
+        android:id="@+id/lvSpec_tv_ultima_taxa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ultima_medie_taxa"
+        android:textSize="16sp"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/sanss"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/lvSpec_tv_ultima_buget"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="6dp"/>
+
+    <TextView
+        android:id="@+id/lvSpec_tv_ultima_buget_numar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nota"
+        android:textSize="16sp"
+        android:textColor="@color/verde_spre_albastru"
+        android:fontFamily="@font/sanss"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/lvSpec_tv_nume"
+        app:layout_constraintStart_toEndOf="@id/lvSpec_tv_ultima_buget"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        android:layout_marginTop="6dp"/>
+    <TextView
+        android:id="@+id/lvSpec_tv_ultima_taxa_numar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nota"
+        android:textSize="16sp"
+        android:textColor="@color/verde_spre_albastru"
+        android:fontFamily="@font/sanss"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/lvSpec_tv_ultima_buget"
+        app:layout_constraintStart_toEndOf="@id/lvSpec_tv_ultima_taxa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.04"
+        android:layout_marginTop="6dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

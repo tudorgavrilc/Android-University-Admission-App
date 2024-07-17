@@ -1,0 +1,8 @@
+<!-- res/drawable/map_border.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#bbe2c6"/>
+    <corners android:radius="16dp"/>
+    <stroke
+        android:width="6dp"
+        android:color="@color/verde_spre_albastru"/>
+</shape>

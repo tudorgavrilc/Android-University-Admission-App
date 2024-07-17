@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/lvReview_tv_userName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/blue"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/lvReview_tv_reviewText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#2196F3"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintTop_toBottomOf="@id/lvReview_tv_userName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/lvReview_tv_materii"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/materii"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/albastru_mai_inchis"
+        app:layout_constraintTop_toBottomOf="@id/lvReview_tv_reviewText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="4dp" />
+
+    <RatingBar
+        android:id="@+id/lvReview_rb_materii"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="0"
+        android:isIndicator="true"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintTop_toBottomOf="@id/lvReview_tv_materii"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp"
+        android:theme="@style/RatingBar"/>
+
+    <TextView
+        android:id="@+id/lvReview_tv_cadreDidactice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cadre_didactice"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/albastru_mai_inchis"
+        app:layout_constraintTop_toBottomOf="@id/lvReview_rb_materii"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="4dp" />
+
+    <RatingBar
+        android:id="@+id/lvReview_rb_cadreDidactice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="0"
+        android:isIndicator="true"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintTop_toBottomOf="@id/lvReview_tv_cadreDidactice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp"
+        android:theme="@style/RatingBar"/>
+
+    <TextView
+        android:id="@+id/lvReview_tv_dotari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dotari"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/albastru_mai_inchis"
+        app:layout_constraintTop_toBottomOf="@id/lvReview_rb_cadreDidactice"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="4dp" />
+
+    <RatingBar
+        android:id="@+id/lvReview_rb_dotari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="0"
+        android:isIndicator="true"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintTop_toBottomOf="@id/lvReview_tv_dotari"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp"
+        android:theme="@style/RatingBar"/>
+
+    <Button
+        android:id="@+id/lvReview_btn_stergeReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#07689f"
+        app:layout_constraintStart_toEndOf="@id/lvReview_rb_cadreDidactice"
+        app:layout_constraintTop_toBottomOf="@id/lvReview_rb_materii"
+        app:layout_constraintBottom_toTopOf="@id/lvReview_rb_dotari"
+        android:text="@string/sterge_review_ul"
+        android:layout_marginStart="18dp"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatisticiActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/statistici_tv_titluPieChart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/procentajul"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:fontFamily="@font/sanss"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:layout_marginBottom="24dp"
+            android:layout_centerHorizontal="true"/>
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/statistici_pieChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/statistici_tv_titluPieChart"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/statistici_tv_calculMedie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/compara_media"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:fontFamily="@font/sanss"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:layout_marginTop="24dp"
+            android:layout_below="@id/statistici_pieChart"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/statistici_etMateria1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statistici_tv_calculMedie"
+            android:layout_marginTop="16dp"
+            android:hint="Materia 1"
+            android:inputType="numberDecimal"
+            android:importantForAccessibility="yes"/>
+
+        <EditText
+            android:id="@+id/statistici_etMateria2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statistici_etMateria1"
+            android:layout_marginTop="8dp"
+            android:hint="Materia 2"
+            android:inputType="numberDecimal"
+            android:importantForAccessibility="yes"/>
+
+        <EditText
+            android:id="@+id/statistici_etMateria3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statistici_etMateria2"
+            android:layout_marginTop="8dp"
+            android:hint="Materia 3"
+            android:inputType="numberDecimal"
+            android:importantForAccessibility="yes"/>
+
+        <Button
+            android:id="@+id/statistici_btn_calculMedie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculează Media"
+            android:layout_below="@id/statistici_etMateria3"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/statistici_tv_procentajMaiMare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Procentaj utilizatori cu media mai mare:"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:fontFamily="@font/sanss"
+            android:textColor="@color/blue"
+            android:layout_marginTop="24dp"
+            android:layout_below="@id/statistici_btn_calculMedie"
+            android:layout_centerHorizontal="true"/>
+
+        <ProgressBar
+            android:id="@+id/statistici_progressBarMaiMare"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statistici_tv_procentajMaiMare"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:indeterminateDrawable="@drawable/progress_drawable"/>
+
+        <TextView
+            android:id="@+id/statistici_tv_procentajMaiMic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Procentaj utilizatori cu media mai mică:"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:fontFamily="@font/sanss"
+            android:textColor="@color/blue"
+            android:layout_marginTop="24dp"
+            android:layout_below="@id/statistici_progressBarMaiMare"
+            android:layout_centerHorizontal="true"/>
+
+        <ProgressBar
+            android:id="@+id/statistici_progressBarMaiMic"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statistici_tv_procentajMaiMic"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:indeterminateDrawable="@drawable/progress_drawable"/>
+
+    </RelativeLayout>
+</ScrollView>

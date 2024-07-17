@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="nav_background">#d5eded</color>
+    <color name="nav_selected_item">#555050</color>
+    <color name="nav_not_selected_item">#494646</color>
+    <color name="blue_link">#0000EE</color>
+    <color name="blue">#1E90FF</color>
+    <color name="albastru_mai_inchis">#0161BD</color>
+    <color name="verde_spre_albastru">#08B38A</color>
+    <color name="selected_color">@color/verde_spre_albastru</color>
+    <color name="not_selected_color">@color/blue</color>
+    <color name="culoare_navbar">#CDEFE7</color>
+    <color name="burgundi">#C5304E</color>
+</resources>
